@@ -24,7 +24,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-toolsai.jupyter",
-				"ms-toolsai.vscode-jupyter-powertoys"
+				"ms-toolsai.vscode-jupyter-powertoys",
+				"sourcegraph.cody-ai"
 			]
 		}
 	}
