@@ -9,7 +9,7 @@
 # certifi==2023.5.7
 # charset-normalizer==3.1.0
 # chroma-hnswlib==0.7.3
-# chromadb==0.4.18
+chromadb-pysqlite3
 # click==8.1.7
 # colorama==0.4.6
 # coloredlogs==15.0.1
@@ -91,12 +91,14 @@ openapi-schema-pydantic
 # orjson==3.9.10
 # overrides==7.4.0
 # packaging==23.1
+pandoc
 # parso==0.8.3
 # pexpect==4.9.0
 # platformdirs==4.1.0
 # posthog==3.1.0
 # prompt-toolkit==3.0.41
 # protobuf==4.25.1
+pysqlite3-binary
 # psutil==5.9.6
 # ptyprocess==0.7.0
 # pulsar-client==3.3.0
@@ -105,9 +107,10 @@ openapi-schema-pydantic
 # pyasn1-modules==0.3.0
 # pydantic==1.10.11
 # Pygments==2.17.2
+pypandoc
 # PyPika==0.48.9
 # python-dateutil==2.8.2
-# python-dotenv==1.0.0
+python-dotenv
 # PyYAML==6.0
 # pyzmq==25.1.2
 # regex==2023.10.3
@@ -115,6 +118,7 @@ openapi-schema-pydantic
 # requests-oauthlib==1.3.1
 # rich==13.7.0
 # rsa==4.9
+sentence-transformers
 # shellingham==1.5.4
 # six==1.16.0
 # smmap==5.0.1
@@ -136,6 +140,7 @@ tabulate
 typer==0.9.0
 typing-inspect==0.9.0
 typing_extensions==4.8.0
+unstructured
 urllib3==1.26.18
 # uvicorn==0.23.2
 # uvloop==0.19.0

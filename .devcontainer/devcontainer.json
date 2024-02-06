@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python 3",
+	"name": "Python 3.11",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
 
@@ -17,7 +17,7 @@
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": true,
 			"installJupyterlab": false,
-			"version": "os-provided"
+			"version": "3.11"
 		}
 	},
 	"customizations": {
@@ -25,7 +25,8 @@
 			"extensions": [
 				"ms-toolsai.jupyter",
 				"ms-toolsai.vscode-jupyter-powertoys",
-				"sourcegraph.cody-ai"
+				"sourcegraph.cody-ai",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},

@@ -28,3 +28,9 @@ OPENAI_API_BASE="https://<your instance name>.openai.azure.com/"
 OPENAI_API_TYPE="azure"
 OPENAI_API_VERSION= "2023-05-15"
 ```
+
+### To Do
+- create an EPUB loader to query books
+    - https://python.langchain.com/docs/integrations/document_loaders/epub
+- create an Arxiv loader to search for and query scientific papers
+    - https://python.langchain.com/docs/integrations/document_loaders/arxiv
