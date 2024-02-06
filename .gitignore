@@ -1,1 +1,4 @@
 .env
+chroma/
+data/
+pandoc-3.1.11.1-1-amd64.deb
