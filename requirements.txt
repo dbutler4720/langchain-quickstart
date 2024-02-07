@@ -98,17 +98,18 @@ pandoc
 # posthog==3.1.0
 # prompt-toolkit==3.0.41
 # protobuf==4.25.1
-pysqlite3-binary
 # psutil==5.9.6
 # ptyprocess==0.7.0
 # pulsar-client==3.3.0
 # pure-eval==0.2.2
 # pyasn1==0.5.1
 # pyasn1-modules==0.3.0
+pyautogen
 # pydantic==1.10.11
 # Pygments==2.17.2
 pypandoc
 # PyPika==0.48.9
+pysqlite3-binary
 # python-dateutil==2.8.2
 python-dotenv
 # PyYAML==6.0

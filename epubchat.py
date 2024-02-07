@@ -16,6 +16,10 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,
 )
+from langchain.chains.question_answering import load_qa_chain
+from langchain_openai import OpenAI
+
+
 import chromadb
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
@@ -44,19 +48,24 @@ def chat_with_epub(epub_path, question:str):
   text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
   documents = text_splitter.split_documents(data)
 
+  # we are specifying that OpenAI is the LLM that we want to use in our chain
+  chain = load_qa_chain(llm=OpenAI())
+  query = 'What is this book about?'
+  response = chain.invoke({"input_documents": documents, "question": query})
+  return st.success(response["output_text"])
 
   # create the open-source embedding function
-  embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+  # embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
   # load it into Chroma
-  db = Chroma.from_documents(documents, embedding_function)
+  # db = Chroma.from_documents(documents, embedding_function)
 
   # query it
-  query = "What is this book about"
-  docs = db.similarity_search(query)
+  # query = "What is this book about"
+  # docs = db.similarity_search(query)
 
 #   # print results
-  return st.success((docs[0].page_content))
+  # return st.success((docs[0].page_content))
 
 #   embeddings = OpenAIEmbeddings()
   
