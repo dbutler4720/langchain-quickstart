@@ -18,6 +18,7 @@ chromadb-pysqlite3
 # debugpy==1.8.0
 # decorator==5.1.1
 # Deprecated==1.2.14
+einops
 # exceptiongroup==1.2.0
 # executing==2.0.1
 faiss-cpu==1.7.4
@@ -31,6 +32,7 @@ faiss-cpu==1.7.4
 # google-auth==2.25.0
 # googleapis-common-protos==1.61.0
 # google-search-results
+gradio
 # greenlet==2.0.2
 # grpcio==1.59.3
 # h11==0.14.0
@@ -63,7 +65,7 @@ langchain_openai
 # markdown-it-py==3.0.0
 # marshmallow==3.19.0
 # marshmallow-enum==1.5.1
-# matplotlib-inline==0.1.6
+matplotlib
 # mdurl==0.1.2
 # mercurial==5.6.1
 # mmh3==4.0.1
@@ -78,6 +80,7 @@ langchain_openai
 # onnxruntime==1.16.3
 openai
 openapi-schema-pydantic
+opencv-python-headless
 # opentelemetry-api==1.21.0
 # opentelemetry-exporter-otlp-proto-common==1.21.0
 # opentelemetry-exporter-otlp-proto-grpc==1.21.0
@@ -133,8 +136,10 @@ streamlit==1.31.0
 tabulate
 # tenacity==8.2.3
 # tiktoken==0.4.0
+timm
 # tokenizers==0.15.0
 # tomlkit==0.12.3
+torchvision
 # tornado==6.4
 # tqdm==4.65.0
 # traitlets==5.14.0
@@ -143,6 +148,7 @@ typing-inspect==0.9.0
 typing_extensions==4.8.0
 unstructured
 urllib3==1.26.18
+utils
 # uvicorn==0.23.2
 # uvloop==0.19.0
 watchfiles==0.21.0
